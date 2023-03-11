@@ -1,15 +1,229 @@
-body {
-    overflow: hidden;
+header {
+    background: #FCF8FF;
 }
 
-
-header {
+.header-container {
     background: var(--dark-purple);
     width: 100vw;
     height: 481px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-bottom-right-radius: 100% 15%;
     border-bottom-left-radius: 100% 15%;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav__img {
+    width: 95.76px;
+    height: 24.61px;
+}
+
+.link {
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-32);
+    letter-spacing: -0.16px;
+    color: var(--white);
+    border-bottom: 3px solid var(--eucalyptus);
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--eucalyptus);
+}
+
+.hero__img {
+    position: absolute;
+    width: 320px;
+    height: 184px;
+    left: 36px;
+    top: 389px;
+}
+
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero__wrapper-header {
+    font-family: var(--secondary-typo);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-32);
+    cursor: pointer;
+}
+
+.btn__primary {
+    background: var(--eucalyptus);
+    color: #24053E;
+}
+
+.features {
+    background: #FCF8FF;
+    padding: 150px 16px 70px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 40px;
+    border-bottom-right-radius: 100% 15%;
+    border-bottom-left-radius: 100% 15%;
+}
+
+.feature__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.feature__wrapper--circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #584D62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.feature__wrapper--circle-title {
+    font-family: var(--secondary-typo);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #24053E;
+}
+
+.feature__wrapper--title {
+    font-family: var(--secondary-typo);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: #24053E;
+}
+
+.feature__wrapper--desc {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #584D62;
+}
+
+.team {
+    background: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
 
 
+.team__top--wrapper {
+    position: relative;
+    min-width: 281px;
+    min-height: 281px;
+}
+
+.team__top--wrapper--img {
+    width: 281px;
+    height: 281px;
+    object-fit: cover;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.team__bottom--wrapper {
+    height: 375px;
+    background: #24053E;
+    z-index: 2;
+    gap: 16px;
+    padding: 32px;
+}
+
+.team__bottom--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team__bottom--wrapper--title {
+    font-family: 'Fraunces 144pt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.team__bottom--wrapper--description {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 240px;
+    gap: 58px;
+}
+
+.logo-dark {
+    width: 95.76px;
+    height: 24.61px;
+    object-fit: cover;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
