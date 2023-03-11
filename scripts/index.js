@@ -21,13 +21,19 @@ featuresContainer.innerHTML = info
   .map((item) => {
     return `
   <div class="feature__wrapper">
+  
+  <div class="feature__wrapper--top">
   <div class="feature__wrapper--circle">
-    <span class="feature__wrapper--circle-title">${item.id}</span>
+  <span class="feature__wrapper--circle-title">${item.id}</span>
   </div>
+  </div>
+  <div class="feature__wrapper--bottom">
   <h1 class="feature__wrapper--title">${item.title}</h1>
   <p class="feature__wrapper--desc">
   ${item.desc}
   </p>
+  </div>
+ 
 </div>
   
   `;
