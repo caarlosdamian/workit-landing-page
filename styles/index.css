@@ -5,7 +5,8 @@ header {
 }
 
 .pattern-one,
-.pattern-two {
+.pattern-two,
+.pattern-three {
     display: none;
     position: absolute;
 }
@@ -90,6 +91,7 @@ strong {
     color: #24053e;
     border: 1px solid transparent;
     transition: 0.5 all ease;
+    max-height: 55px;
 }
 
 .btn:hover {
@@ -195,9 +197,6 @@ strong {
     z-index: 2;
     gap: 16px;
     padding: 32px;
-}
-
-.team__bottom--wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +205,6 @@ strong {
 
 .team__bottom--wrapper--title {
     font-family: "Fraunces 144pt";
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
@@ -215,8 +213,6 @@ strong {
 }
 
 .team__bottom--wrapper--description {
-    font-family: "Manrope";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -253,9 +249,6 @@ footer {
     object-fit: contain;
 }
 
-
-/* @media only screen and (min-width: 20rem) {} */
-
 @media only screen and (min-width: 48rem) {
 
     header {
@@ -291,8 +284,8 @@ footer {
     }
 
     .hero__img {
-        width: 479.15px;
-        height: 286.6px;
+        width: 470.44px;
+        height: 271.84px;
         top: 380px;
     }
 
@@ -302,14 +295,8 @@ footer {
     }
 
     .feature__wrapper {
-        /* display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr); */
         flex-direction: row;
-
     }
-
-    .feature__wrapper--circle {}
 
     .feature__wrapper--bottom {
         align-items: flex-start;
@@ -328,6 +315,50 @@ footer {
         line-height: 28px;
         text-align: start;
     }
+
+    .team {
+        padding: 16px 40px 34px 214px;
+        position: relative;
+        margin-top: 200px;
+    }
+
+    .team__top--wrapper {
+        position: absolute;
+        top: -200px;
+        left: 39px;
+    }
+
+    .team__top--wrapper--img {
+        position: relative;
+    }
+
+    .team__bottom--wrapper {
+        width: 514px;
+        align-items: flex-start;
+        padding: 48px 56px;
+        position: relative;
+    }
+
+    .pattern-three {
+        display: block;
+        bottom: -70px;
+        right: 12px;
+        width: 173px;
+        height: 137px;
+        object-fit: cover;
+    }
+
+    .team__bottom--wrapper--title {
+        text-align: start;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .team__bottom--wrapper--description {
+        text-align: start;
+    }
+
+
 
 }
 
