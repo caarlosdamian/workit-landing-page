@@ -74,7 +74,7 @@ nav {
     font-size: 50px;
     line-height: 50px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
 }
 
 strong {
@@ -160,7 +160,7 @@ strong {
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 28px;
     text-align: center;
     color: #584d62;
@@ -209,15 +209,15 @@ strong {
     font-size: 32px;
     line-height: 48px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .team__bottom--wrapper--description {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 28px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 8px;
 }
 
@@ -275,6 +275,7 @@ footer {
     .header-container {
         padding: 32px;
         gap: 56px;
+        height: 540.24px;
     }
 
     .hero__wrapper-header {
@@ -311,7 +312,7 @@ footer {
     }
 
     .feature__wrapper--desc {
-        font-size: 16px;
+        font-size: var(--font-size-16);
         line-height: 28px;
         text-align: start;
     }
@@ -358,10 +359,113 @@ footer {
         text-align: start;
     }
 
-
-
 }
 
-@media only screen and (min-width: 62rem) {}
+/* @media only screen and (min-width: 62rem) {} */
 
-@media only screen and (min-width: 75rem) {}
+@media only screen and (min-width: 75rem) {
+
+    .pattern-one {
+        left: -138px;
+        top: 116px;
+    }
+
+    .pattern-two {
+        display: block;
+        top: 250px;
+        right: -40px;
+    }
+
+    .header-container {
+        padding: 56px 165px;
+        gap: 56px;
+        height: 730px;
+    }
+
+    .hero__wrapper-header {
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .hero__img {
+        width: 767px;
+        height: 441px;
+        top: 450px;
+    }
+
+    .features {
+        padding: 205px 98px 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 750px;
+    }
+
+    .feature__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feature__wrapper--bottom {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .feature__wrapper--circle {
+        width: 56px;
+        height: 56px;
+    }
+
+    .feature__wrapper--circle-title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .feature__wrapper--title {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .feature__wrapper--desc {
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .team {
+        padding: 16px 40px 34px 545px;
+        margin-top: 250px;
+    }
+
+    .team__top--wrapper {
+        top: -250px;
+        left: 165px;
+    }
+
+    .team__top--wrapper--img {
+        width: 477px;
+        height: 477px;
+    }
+
+    .team__bottom--wrapper {
+        width: 730px;
+        padding: 64px;
+    }
+
+    .pattern-three {
+        bottom: -20px;
+    }
+
+    .team__bottom--wrapper--title {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .team__bottom--wrapper--description {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
